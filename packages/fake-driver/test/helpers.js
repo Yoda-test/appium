@@ -2,7 +2,7 @@ import path from 'path';
 import wd from 'wd';
 
 
-const TEST_HOST = 'localhost';
+const TEST_HOST = '127.0.0.1';
 const TEST_PORT = 4774;
 const TEST_APP = path.resolve(__dirname, '..', '..', 'test', 'fixtures', 'app.xml');
 
@@ -10,7 +10,7 @@ const DEFAULT_CAPS = {
   platformName: 'Fake',
   deviceName: 'Fake',
   app: TEST_APP,
-  address: 'localhost',
+  address: TEST_HOST,
   port: 8181,
 };
 
